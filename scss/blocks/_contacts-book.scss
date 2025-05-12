@@ -1,0 +1,35 @@
+.contacts-book {
+  min-height: 100vh;
+  padding: 24px 0;
+
+  &__note {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btn-contacts {
+    display: none;
+
+    @include vp-767 {
+      display: flex;
+      gap: 15px;
+      background-color: $color-razzmatazz;
+      padding: 16px 0;
+
+      &:hover {
+        background-color: $color-crimson;
+      }
+    }
+  }
+}

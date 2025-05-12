@@ -1,0 +1,98 @@
+.contact {
+  border-bottom: 1px solid $color-black-10;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 3fr max-content repeat(2, min-content);
+  gap: 8px;
+  align-items: center;
+
+  @include vp-767 {
+    grid-template-columns: 1fr min-content min-content;
+    padding: 25px 0;
+    gap: 16px 8px;
+  }
+
+  &:first-child {
+    border-top: 1px solid $color-black-10;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding: 15px 0 0 0;
+
+    @include vp-767 {
+      padding: 24px 0 0 0;
+    }
+  }
+
+  &__name {
+    color: $color-black-50;
+
+    @include vp-767 {
+      grid-column: span 3;
+    }
+  }
+
+  &__tel {
+    margin-right: 24px;
+
+    @include vp-767 {
+      margin-right: 0;
+    }
+  }
+
+  &__name,
+  &__tel {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__btn-edit {
+    padding: 8px 9px;
+
+    &:hover {
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &__btn-del {
+    padding: 8px 10px;
+
+    &:hover {
+      background-color: $color-cinnabar;
+    }
+  }
+
+  &__btn-edit,
+  &__btn-del {
+    background-color: inherit;
+    width: unset;
+    border: 1px solid $color-black-10;
+
+    &:hover {
+      border-color: transparent;
+
+      .contact__icon-basket,
+      .contact__edit {
+        fill: $color-white;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__icon-del {
+    width: 16px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  &__icon-edit {
+    width: 18px;
+  }
+
+  &__icon-basket,
+  &__edit {
+    transition: opacity $transition-300, fill $transition-300;
+  }
+}

@@ -1,0 +1,29 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-alice-blue: #F6F7F9;
+$color-navy-blue: #005BFE;
+$color-razzmatazz: #f81155;
+$color-cobalt: #0047C6;
+$color-crimson: #D1003E;
+$color-whisper: #E4E3E3;
+$color-cinnabar: #EA3D2F;
+$color-navy-blue-10: rgba($color-navy-blue, 0.1);
+$color-navy-blue-40: rgba($color-navy-blue, 0.4);
+$color-black-5: rgba($color-black, 0.05);
+$color-black-50: rgba($color-black, 0.5);
+$color-black-10: rgba($color-black, 0.1);
+$color-black-15: rgba($color-black, 0.15);
+
+
+
+// Typography
+$ff-pt-sans: "PT Sans", "Arial", sans-serif;
+
+// Viewport
+$vp-mobile: 767px;
+
+// Animation
+$transition-300: ease-out 0.3s;
+/* 
+$transition-500: ease-in 0.5s; */

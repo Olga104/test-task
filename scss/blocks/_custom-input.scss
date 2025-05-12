@@ -1,0 +1,45 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+
+  &__field {
+    background-color: $color-black-5;
+    border: 1px solid transparent;
+    padding: 10px 12px;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: border $transition-300, box-shadow $transition-300;
+
+    &:hover {
+      border: 1px solid $color-navy-blue;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $color-navy-blue;
+      box-shadow: 0px 0px 5px 0px $color-navy-blue-40;
+    }
+
+    &::placeholder {
+      color: $color-black-50;
+    }
+  }
+
+  &__error {
+    font-weight: 400;
+    color: $color-cinnabar;
+    display: none;
+  }
+
+  &--error {
+    .custom-input__error {
+      display: block;
+    }
+
+    .custom-input__field {
+      border: 1px solid $color-cinnabar;
+    }
+  }
+}

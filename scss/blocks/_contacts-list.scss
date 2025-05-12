@@ -1,0 +1,14 @@
+.contacts-list {
+  padding: 32px 0 0 0;
+  display: none;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include vp-767 {
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_btn";
+@import "blocks/_contacts-book";
+@import "blocks/_header";
+@import "blocks/_management-group";
+@import "blocks/_management-contacts";
+@import "blocks/_custom-input";
+@import "blocks/_form-group";
+@import "blocks/_form-contacts";
+@import "blocks/_contacts-list";
+@import "blocks/_accordion";
+@import "blocks/_contact";
+@import "blocks/_popup-del";
+@import "blocks/_popup-add";
